@@ -35,10 +35,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         getSupportActionBar().hide();
         findViewById(R.id.up_btn).setOnClickListener(this);
         findViewById(R.id.down_btn).setOnClickListener(this);
-        mLogo = (ImageView) findViewById(R.id.toolbar_image);
-        mTextV = (TextView) findViewById(R.id.textV);
+//        mLogo = (ImageView) findViewById(R.id.toolbar_image);
         mContainer = (ExtendendGroup) findViewById(R.id.container);
-        mContainer.setDisplayHeight(getResources().getDisplayMetrics().heightPixels);
+        mContainer.setDisplayHeight(getWindowManager().getDefaultDisplay().getHeight());
     }
 
     @Override
